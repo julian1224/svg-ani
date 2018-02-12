@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-gap: 2em;
+}
+.box {
+  padding: 2em;
+  position: relative;
+}
+
+.box__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box__box {
+stroke: #39a;
+stroke-width: 10px;
+fill: transparent;
+transition: stroke-dashoffset 1s ease-in-out;
+}
